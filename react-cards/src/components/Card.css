@@ -1,0 +1,19 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 300px;
+    height: 400px;
+    color: #333;
+}
+.card img{
+    width: 300px;
+    height: 70%;
+}
+.card a{
+    padding-bottom: 8px;
+    display: inline;
+
+}
