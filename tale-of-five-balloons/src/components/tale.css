@@ -1,0 +1,53 @@
+body{
+    background-color: #61dafb;
+    color: #333;
+}
+.child{
+    width: 100px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.balloons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.red{
+    border-radius: 50%;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+
+}
+.green{
+    border-radius: 50%;
+    background-color: green;
+    width: 50px;
+    height: 50px;
+
+}
+.blue{
+    border-radius: 50%;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+
+}
+.yellow{
+    border-radius: 50%;
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+
+}
+.purple{
+    border-radius: 50%;
+    background-color: purple;
+    width: 50px;
+    height: 50px;
+
+}
