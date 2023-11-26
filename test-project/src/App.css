@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: #fee300;
+}
