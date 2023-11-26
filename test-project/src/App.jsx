@@ -4,6 +4,7 @@ import Increment from './components/increment'
 import HideAndSeek from './components/HideAndSeek'
 import IncrementAndDecrement from './components/IncrementAndDecrement'
 import Parent from './components/childtoparent/Parent'
+import Checkbox from './components/Checkbox/Checkbox'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -17,6 +18,8 @@ function App() {
     {/* <IncrementAndDecrement /> */}
     {/* Ex 7.1 */}
     {/* <Parent /> */}
+    {/* Ex 7.2 */}
+    <Checkbox />
     </>
   )
 }
