@@ -56,3 +56,17 @@
 .green{
   color: green;
 }
+.color-red{
+  background-color: red;
+  margin-right: 8px;
+  color: black;
+}
+.color-blue{
+  background-color: blue;
+  margin-right: 8px;
+  color: black;
+}
+.color-yellow{
+  background-color: yellow;
+  color: black;
+}
