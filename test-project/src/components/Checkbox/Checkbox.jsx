@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
 
-export default function Checkbox() {
-    const [boxCheck, setBoxCheck] = useState(true);
+export default function Checkbox({ children, startState, ...props }) {
+    const [boxCheck, setBoxCheck] = useState(startState);
     return (
         <div>
             <p>
@@ -10,38 +10,11 @@ export default function Checkbox() {
                     type="checkbox"
                     name=""
                     id=""
-                    onClick={()=>setBoxCheck(!boxCheck)}
-                />{" "}
-                I read the term of the app
-            </p>
-            <p>
-                <input
-                    type="checkbox"
-                    name=""
-                    id=""
-                    onClick={()=>setBoxCheck(!boxCheck)}
-                />{" "}
-                I accept the term of the app
-            </p>
-            <p>
-                <input
-                    type="checkbox"
-                    name=""
-                    id=""
                     checked={boxCheck}
-                    onClick={()=>setBoxCheck(!boxCheck)}
+                    onChange={() => setBoxCheck(boxCheck => !boxCheck)}
+                    {...props}
                 />{" "}
-                I want to get the weekly news letter
-            </p>
-            <p>
-                <input
-                    type="checkbox"
-                    name=""
-                    id=""
-                    checked={boxCheck}
-                    onClick={()=>setBoxCheck(!boxCheck)}
-                />{" "}
-                I want to get sales and offers
+                {children}
             </p>
         </div>
     );

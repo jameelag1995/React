@@ -1,27 +1,28 @@
-import { useState } from 'react'
-import './App.css'
-import Increment from './components/increment'
-import HideAndSeek from './components/HideAndSeek'
-import IncrementAndDecrement from './components/IncrementAndDecrement'
-import Parent from './components/childtoparent/Parent'
-import Checkbox from './components/Checkbox/Checkbox'
-function App() {
-  const [count, setCount] = useState(0)
+import { useState } from "react";
+import "./App.css";
+import Increment from "./components/increment";
+import HideAndSeek from "./components/HideAndSeek";
+import IncrementAndDecrement from "./components/IncrementAndDecrement";
+import Parent from "./components/childtoparent/Parent";
 
-  return (
-    <>
-    {/* Ex 6.1 */}
-    {/* <Increment/> */}
-    {/* Ex 6.2 */}
-    {/* <HideAndSeek /> */}
-    {/* Ex 6.3 */}
-    {/* <IncrementAndDecrement /> */}
-    {/* Ex 7.1 */}
-    {/* <Parent /> */}
-    {/* Ex 7.2 */}
-    <Checkbox />
-    </>
-  )
+import Agreement from "./components/Checkbox/Agreement";
+function App() {
+    const [count, setCount] = useState(0);
+
+    return (
+        <>
+            {/* Ex 6.1 */}
+            {/* <Increment/> */}
+            {/* Ex 6.2 */}
+            {/* <HideAndSeek /> */}
+            {/* Ex 6.3 */}
+            {/* <IncrementAndDecrement /> */}
+            {/* Ex 7.1 */}
+            {/* <Parent /> */}
+            {/* Ex 7.2 */}
+            <Agreement />
+        </>
+    );
 }
 
-export default App
+export default App;
