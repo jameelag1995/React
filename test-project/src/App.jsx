@@ -6,6 +6,8 @@ import IncrementAndDecrement from "./components/IncrementAndDecrement";
 import Parent from "./components/childtoparent/Parent";
 
 import Agreement from "./components/Checkbox/Agreement";
+import Form from "./components/Form/Form";
+import Main from "./components/Form/Main";
 function App() {
     const [count, setCount] = useState(0);
 
@@ -20,7 +22,9 @@ function App() {
             {/* Ex 7.1 */}
             {/* <Parent /> */}
             {/* Ex 7.2 */}
-            <Agreement />
+            {/* <Agreement /> */}
+            {/* Ex 7.3 */}
+            <Main/>
         </>
     );
 }
