@@ -8,6 +8,7 @@ import DataMassaging from "./components/DataMassaging/DataMassaging";
 import Agreement from "./components/Checkbox/Agreement";
 import Form from "./components/Form/Form";
 import Main from "./components/Form/Main";
+import VideoPlayer from "./components/PlayPauseVideo/VideoPlayer";
 function App() {
     const [count, setCount] = useState(0);
     const [student, setStudent] = useState({ firstname: "", lastname: "" });
@@ -47,7 +48,10 @@ function App() {
                     onChange={handleInput}
                 />
             </form> */}
-            <DataMassaging />
+            {/* Ex 9.1 */}
+            {/* <DataMassaging /> */}
+            <VideoPlayer/>
+
         </>
     );
 }
