@@ -5,7 +5,7 @@ export default function Form({ setIsReview, setFormData, formData }) {
         e.preventDefault();
         setIsReview((prev) => !prev);
     }
-    function handleInput(e) {
+    const handleInput=(e)=> {
         let { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     }
