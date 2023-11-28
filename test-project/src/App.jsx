@@ -10,6 +10,16 @@ import Form from "./components/Form/Form";
 import Main from "./components/Form/Main";
 function App() {
     const [count, setCount] = useState(0);
+    const [student, setStudent] = useState({ firstname: "", lastname: "" });
+
+    // function handleInput(e) {
+    //     console.log(e);
+    //     // const {name,value} = e.target;
+    //     // const name = e.target.name;
+    //     // const value = e.target.value;
+    //     setStudent({ ...student, [e.target.name]: e.target.value });
+    //     console.log(student);
+    // }
 
     return (
         <>
@@ -25,6 +35,18 @@ function App() {
             {/* <Agreement /> */}
             {/* Ex 7.3 */}
             <Main/>
+            {/* <form action="">
+                <input
+                    type="text"
+                    name="firstname"
+                    onChange={handleInput}
+                />
+                <input
+                    type="text"
+                    name="lastname"
+                    onChange={handleInput}
+                />
+            </form> */}
         </>
     );
 }

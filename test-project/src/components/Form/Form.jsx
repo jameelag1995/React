@@ -52,6 +52,7 @@ export default function Form({ setIsReview, setFormData, formData }) {
                 ></textarea>
                 <input type="submit" value="Continue" />
             </form>
+            
         </div>
     );
 }
