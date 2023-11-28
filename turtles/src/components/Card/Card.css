@@ -1,0 +1,15 @@
+.card-container .card {
+    background-color: peru;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 9px 0 black;
+    gap: 5px;
+    padding: 20px;
+    justify-content: center;
+    
+    text-align: center;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+}
+
