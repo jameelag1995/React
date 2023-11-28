@@ -1,0 +1,28 @@
+.card{
+    border: 1px solid #fff;
+    padding: 4px;
+    margin: 4px;
+    border-radius: 5px;
+    width: 200px;
+    background: #000;
+
+}
+.cards-container{
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+    gap: 30px;
+    background: lightblue;
+    border-radius: 5px;
+
+}
+.names-container{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+    background: lightseagreen;
+    border-radius: 5px;
+}

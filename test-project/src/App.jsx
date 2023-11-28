@@ -4,7 +4,7 @@ import Increment from "./components/increment";
 import HideAndSeek from "./components/HideAndSeek";
 import IncrementAndDecrement from "./components/IncrementAndDecrement";
 import Parent from "./components/childtoparent/Parent";
-
+import DataMassaging from "./components/DataMassaging/DataMassaging";
 import Agreement from "./components/Checkbox/Agreement";
 import Form from "./components/Form/Form";
 import Main from "./components/Form/Main";
@@ -34,7 +34,7 @@ function App() {
             {/* Ex 7.2 */}
             {/* <Agreement /> */}
             {/* Ex 7.3 */}
-            <Main/>
+            {/* <Main/> */}
             {/* <form action="">
                 <input
                     type="text"
@@ -47,6 +47,7 @@ function App() {
                     onChange={handleInput}
                 />
             </form> */}
+            <DataMassaging />
         </>
     );
 }
