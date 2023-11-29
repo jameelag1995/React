@@ -9,6 +9,11 @@ import Agreement from "./components/Checkbox/Agreement";
 import Form from "./components/Form/Form";
 import Main from "./components/Form/Main";
 import VideoPlayer from "./components/PlayPauseVideo/VideoPlayer";
+import ImageToggle from "./components/ImageToggle/ImageToggle";
+import originalImg from "/firstimage.jpg";
+import originalImgbw from "/firstimagebw.jpg";
+import secondOriginalImg from "/secondimage.jpg";
+import secondOriginalImgbw from "/secondimagebw.jpg";
 function App() {
     const [count, setCount] = useState(0);
     const [student, setStudent] = useState({ firstname: "", lastname: "" });
@@ -50,8 +55,15 @@ function App() {
             </form> */}
             {/* Ex 9.1 */}
             {/* <DataMassaging /> */}
-            <VideoPlayer/>
-
+            {/* Ex 10.1 */}
+            {/* <VideoPlayer/> */}
+            {/* Ex 10.2 */}
+            {/* <ImageToggle bwImg={originalImgbw} orgImg={originalImg} />
+            <ImageToggle
+                bwImg={secondOriginalImgbw}
+                orgImg={secondOriginalImg}
+            /> */}
+            
         </>
     );
 }

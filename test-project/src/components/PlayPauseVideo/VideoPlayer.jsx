@@ -1,6 +1,6 @@
 import React from "react";
 import { useRef, useState } from "react";
-import myvid from '../../assets/testvideo.mp4'
+import myvid from "../../assets/testvideo.mp4";
 export default function VideoPlayer() {
     const videoRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
@@ -11,6 +11,7 @@ export default function VideoPlayer() {
             setIsPlaying(!isPlaying);
         }
     };
+
     const handlePause = () => {
         if (isPlaying) {
             videoRef.current.pause();
@@ -27,9 +28,10 @@ export default function VideoPlayer() {
                 />
                 Your browser does not support the video tag.
             </video>
-
-            <button onClick={handlePlay}>Play</button>
-            <button onClick={handlePause}>Pause</button>
+            <div className="video-buttons-div">
+                <button onClick={handlePlay}>Play</button>
+                <button onClick={handlePause}>Pause</button>
+            </div>
         </div>
     );
 }

@@ -75,3 +75,20 @@ form{
   flex-direction: column;
   gap: 16px;
 }
+.images-container{
+  display: flex;
+  gap: 50px;
+
+}
+img{
+  width: 400px;
+  height: 600px;
+  margin: 20px;
+
+}
+.video-buttons-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
