@@ -1,0 +1,28 @@
+.Spinner {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.spinner1::before {
+    animation: 1.5s linear infinite spinner;
+    border: solid 5px #797979;
+    border-bottom-color: #e19819;
+    border-radius: 50%;
+    content: "";
+    height: 40px;
+    width: 40px;
+    position: absolute;
+}
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.hide{
+    transition: all 1s ease;
+    opacity: 0;
+}
