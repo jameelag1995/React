@@ -13,18 +13,15 @@ export default function Notepad() {
             alert("Please enter a valid note");
             return;
         }
-        console.dir(noteRef.current);
-        
         setNotesData([...notesData, noteRef.current.value]);
         noteRef.current.value = "";
     };
-    const handleKeyPress =(e)=>{
-        if(e.key === 'Enter'){
+    const handleKeyPress = (e) => {
+        if (e.key === "Enter") {
             handleClick(e);
         }
+    };
 
-    }
-    
     useEffect(() => {
         // Load notes from local storage when the component mounts
         const storedNotes = JSON.parse(localStorage.getItem("notes")) || [];
