@@ -6,6 +6,7 @@ import FavoriteColor from './components/FavoriteColor/FavoriteColor'
 import BoxAnimation from './components/BoxAnimation/BoxAnimation'
 import ChangingBox from './components/ChangingBox/ChangingBox'
 import Spinner from './components/Spinner/Spinner'
+import Focus from './components/Focus/Focus'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,7 +20,9 @@ function App() {
       {/* Ex 13.3 */}
       {/* <ChangingBox /> */}
       {/* Ex 13.4 */}
-      <Spinner />
+      {/* <Spinner /> */}
+      {/* Ex 13.5 */}
+      <Focus />
     </div>
   )
 }
