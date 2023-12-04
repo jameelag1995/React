@@ -1,0 +1,88 @@
+.Notepad {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px;
+}
+.Notepad h1 {
+    font-size: 48px;
+    width: 100%;
+    text-align: center;
+}
+.noteContainer {
+    width: 100%;
+    border-bottom: 1px solid #333;
+}
+.Note {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.note-content {
+    font-size: 28px;
+    text-align: left;
+    flex-grow: 2;
+}
+#note-check {
+    opacity: 0;
+    width: 20px;
+}
+#note-check:checked ~ .note-content {
+    text-decoration: line-through;
+}
+#note-check:checked ~ .checked-icon {
+    display: block;
+}
+.checked-icon {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    display: none;
+}
+.unchecked-icon {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+#note-check:checked ~ .unchecked-icon {
+    display: none;
+}
+.delete-note-btn {
+    background-color: rgba(155, 0, 0, 0.7);
+    width: 60px !important;
+    height: 30px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 6px;
+}
+.delete-note-btn:hover {
+    background-color: rgba(110, 3, 3, 0.7);
+}
+.add-note-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+#note-input {
+    flex-grow: 3;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 23px;
+}
+.add-note-btn {
+    background-color: rgba(0, 155, 0, 0.7);
+    width: 60px;
+    height: 30px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 6px;
+}
+.add-note-btn:hover {
+    background-color: rgba(0, 110, 0, 0.7);
+}
