@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import FavoriteColor from './components/FavoriteColor/FavoriteColor'
 import BoxAnimation from './components/BoxAnimation/BoxAnimation'
+import ChangingBox from './components/ChangingBox/ChangingBox'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +14,9 @@ function App() {
       {/* Ex 13.1 */}
       {/* <FavoriteColor /> */}
       {/* Ex 13.2 */}
-      <BoxAnimation />
+      {/* <BoxAnimation /> */}
+      {/* Ex 13.3 */}
+      <ChangingBox />
     </div>
   )
 }
