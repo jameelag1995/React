@@ -16,24 +16,26 @@ const GuessTheWordGame = () => {
     const [isCorrect, setIsCorrect] = useState(
         Array(wordToGuess.length).fill(false)
     );
+    
     console.log("the word to guess is:", wordToGuess);
     const handleInputChange = (i, value) => {
         const newInputValues = [...inputsValues];
         newInputValues[i] = value.toLowerCase();
-        console.log(value);
-        console.log("letter to guess", wordToGuess[i]);
         setInputsValues(newInputValues);
 
         if (value.toLowerCase() === wordToGuess[i].toLowerCase()) {
             isCorrect[i] = true;
         }
-        if (i !== inputsValues.length - 1) {
-            console.log("inside i < inpvals");
+
+        // focus not working
+        console.log(i);
+        console.log(inputsValues.length - 1);
+        console.log(inputsRef.current);
+        if (i != (inputsValues.length - 1)) {
             inputsRef.current[i + 1].focus();
         }
     };
 
-    console.log("after set", inputsValues);
     return (
         <div className="GuessTheWordGame">
             <h1>Guess The Word Game</h1>
