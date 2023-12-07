@@ -13,27 +13,32 @@ const GuessTheWordGame = () => {
         Array(wordToGuess.length).fill("")
     );
     const inputsRef = useRef([]);
-    const [isCorrect, setIsCorrect] = useState(
-        Array(wordToGuess.length).fill(false)
-    );
-    
-    console.log("the word to guess is:", wordToGuess);
+        console.log(wordToGuess);
+    useEffect(() => {
+        inputsRef.current[0].focus();
+    }, [wordToGuess]);
+
     const handleInputChange = (i, value) => {
         const newInputValues = [...inputsValues];
         newInputValues[i] = value.toLowerCase();
         setInputsValues(newInputValues);
 
-        if (value.toLowerCase() === wordToGuess[i].toLowerCase()) {
-            isCorrect[i] = true;
+        if (value !== wordToGuess[i]) {
+            setTimeout(() => {
+                inputsRef.current[i].value = "";
+            }, 500);
+            return;
         }
 
-        // focus not working
-        console.log(i);
-        console.log(inputsValues.length - 1);
-        console.log(inputsRef.current);
-        if (i != (inputsValues.length - 1)) {
+        if (i < inputsValues.length - 1) {
             inputsRef.current[i + 1].focus();
         }
+    };
+
+    const handlePlayAgain = () => {
+        const newWord = generateRandomWord();
+        setInputsValues(Array(newWord.length).fill(""));
+        setWordToGuess(newWord);
     };
 
     return (
@@ -46,7 +51,7 @@ const GuessTheWordGame = () => {
                             className={
                                 letter === wordToGuess[index] ? "correct" : ""
                             }
-                            key={Math.random()}
+                            key={index}
                             type="text"
                             maxLength={1}
                             ref={(el) => (inputsRef.current[index] = el)}
@@ -61,7 +66,7 @@ const GuessTheWordGame = () => {
             {inputsValues.join("") === wordToGuess && (
                 <div className="won-container">
                     <h2>You Won The Word Was {wordToGuess}</h2>
-                    <button onClick={()=>window.location.reload()}>Play Again</button>
+                    <button onClick={handlePlayAgain}>Play Again</button>
                 </div>
             )}
         </div>
