@@ -1,0 +1,47 @@
+.GuessTheWordGame{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+.letters-inputs-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.letters-inputs-container input{
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    text-align: center;
+    
+}
+.correct{
+    border: 5px solid teal;
+}
+.won-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.won-container h2{
+    color: rgb(23, 131, 23);
+    text-shadow: 0 0 1px black;
+    
+
+}
+.won-container button{
+    width: 60px;
+    height: 40px;
+    background-color: lightskyblue;
+    color: #333;
+border-radius: 6px;
+}
+button:hover{
+    background-color: rgb(45, 111, 152);
+}
