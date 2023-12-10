@@ -1,0 +1,32 @@
+.Avatar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+.avatars-container{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.AvatarCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    gap: 8px;
+    border: 1px solid white;
+}
+.AvatarCard img{
+    width: 100%;
+    height: 40%;
+}

@@ -14,9 +14,10 @@ import originalImg from "/firstimage.jpg";
 import originalImgbw from "/firstimagebw.jpg";
 import secondOriginalImg from "/secondimage.jpg";
 import secondOriginalImgbw from "/secondimagebw.jpg";
+import { Avatar } from "./components/Avatar/Avatar";
 function App() {
-    const [count, setCount] = useState(0);
-    const [student, setStudent] = useState({ firstname: "", lastname: "" });
+    // const [count, setCount] = useState(0);
+    // const [student, setStudent] = useState({ firstname: "", lastname: "" });
 
     // function handleInput(e) {
     //     console.log(e);
@@ -63,6 +64,7 @@ function App() {
                 bwImg={secondOriginalImgbw}
                 orgImg={secondOriginalImg}
             /> */}
+            <Avatar />
             
         </>
     );
