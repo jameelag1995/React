@@ -40,3 +40,14 @@
 .read-the-docs {
   color: #888;
 }
+
+ul{
+  list-style: none;
+
+}
+li{
+  font-size: 32px;
+}
+.checked{
+  text-decoration: line-through;
+}
