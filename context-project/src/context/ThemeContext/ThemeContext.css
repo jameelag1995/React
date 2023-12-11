@@ -1,0 +1,21 @@
+/* .dark div,
+header,
+main,
+input,
+button {
+    background-color: #222 !important;
+    color: #fff!important;
+    border: 1px solid #fff !important;
+}
+button {
+    width: 60px;
+}
+div,
+header,
+main,
+input,
+button {
+    background-color: #fff;
+    color: #222;
+    border: 1px solid #222;
+} */
