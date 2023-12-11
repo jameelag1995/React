@@ -13,13 +13,25 @@ export default function Notepad() {
             alert("Please enter a valid note");
             return;
         }
-        setNotesData([...notesData, noteRef.current.value]);
+        setNotesData([
+            ...notesData,
+            { text: noteRef.current.value, isDone: false },
+        ]);
         noteRef.current.value = "";
     };
     const handleKeyPress = (e) => {
         if (e.key === "Enter") {
             handleClick(e);
         }
+    };
+
+    const handleChangeNote = (noteToChangeIndex) => {
+        const newNotesArr = notesData.map((note, index) => {
+            return index === noteToChangeIndex
+                ? { text: note.text, isDone: !note.isDone }
+                : note;
+        });
+        setNotesData(newNotesArr);
     };
 
     useEffect(() => {
@@ -30,7 +42,9 @@ export default function Notepad() {
     }, []);
     useEffect(() => {
         localStorage.setItem("notes", JSON.stringify(notesData));
+        console.log(notesData);
     }, [notesData]);
+
     return (
         <div className="Notepad">
             <h1>Notes</h1>
@@ -52,9 +66,11 @@ export default function Notepad() {
                     <Note
                         key={index}
                         index={index}
-                        noteContent={note}
+                        noteContent={note.text}
+                        isDone={note.isDone}
                         handleData={setNotesData}
                         data={notesData}
+                        handleChangeNote={handleChangeNote}
                     />
                 );
             })}
