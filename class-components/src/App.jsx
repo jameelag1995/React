@@ -6,6 +6,7 @@ import Counter from './components/Counter'
 import Todo from './components/Todo'
 import WhatIsTime from './components/WhatIsTime'
 import Box from './components/Box'
+import CountriesOfTheWorld from './components/CountriesOfTheWorld'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -18,7 +19,9 @@ function App() {
      {/* ex 20.3 */}
      {/* <WhatIsTime/> */}
      {/* ex 21.1 */}
-     <Box/>
+     {/* <Box/> */}
+     {/* ex 21.2 */}
+     <CountriesOfTheWorld/>
     </>
   )
 }
