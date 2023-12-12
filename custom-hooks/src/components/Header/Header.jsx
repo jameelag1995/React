@@ -10,6 +10,9 @@ export default function Header() {
             <Link to="/Calculator">
                 <button>Calculator </button>
             </Link>
+            <Link to="/Products">
+                <button>Products </button>
+            </Link>
         </div>
     );
 }
